@@ -55,7 +55,7 @@ export default function Section({ id, title, subtitle, content, isActive, showBu
               variant="outline"
               size="lg"
               className="text-[#FF4D00] bg-transparent border-[#FF4D00] hover:bg-[#FF4D00] hover:text-black transition-colors"
-              onClick={() => buttonHref && window.open(buttonHref, '_self')}
+              onClick={() => buttonHref && window.open(buttonHref, '_blank')}
             >
               {buttonText}
             </Button>

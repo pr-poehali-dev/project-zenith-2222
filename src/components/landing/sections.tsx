@@ -7,7 +7,7 @@ export const sections = [
     title: "Строим будущее Мариуполя.",
     showButton: true,
     buttonText: 'Откликнуться',
-    buttonHref: 'https://max.ru/',
+    buttonHref: 'https://max.ru/u/f9LHodD0cOKW9AcVtRlK9hypbaFebhLHGKeWK9zv-R6QrpI7iZ3vQnksYJU',
     bgImage: 'https://cdn.poehali.dev/projects/fbef872b-3c30-462f-8f99-b13ba48ec336/files/91909043-f621-44bd-9f87-09da55a04d83.jpg'
   },
   {
