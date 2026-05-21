@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import type { SectionProps } from "@/types"
 
-export default function Section({ id, title, subtitle, content, isActive, showButton, buttonText, buttonHref, bgImage }: SectionProps) {
+export default function Section({ id, title, subtitle, content, isActive, showButton, buttonText, buttonHref, button2Text, button2Href, bgImage }: SectionProps) {
   return (
     <section id={id} className="relative h-screen w-full snap-start flex flex-col justify-center p-8 md:p-16 lg:p-24 overflow-hidden">
       {bgImage && (
@@ -51,14 +51,26 @@ export default function Section({ id, title, subtitle, content, isActive, showBu
             transition={{ duration: 0.5, delay: 0.4 }}
             className="mt-12 md:mt-16"
           >
-            <Button
-              variant="outline"
-              size="lg"
-              className="text-[#FF4D00] bg-transparent border-[#FF4D00] hover:bg-[#FF4D00] hover:text-black transition-colors"
-              onClick={() => buttonHref && window.open(buttonHref, '_blank')}
-            >
-              {buttonText}
-            </Button>
+            <div className="flex flex-wrap gap-4">
+              <Button
+                variant="outline"
+                size="lg"
+                className="text-[#FF4D00] bg-transparent border-[#FF4D00] hover:bg-[#FF4D00] hover:text-black transition-colors"
+                onClick={() => buttonHref && window.open(buttonHref, '_blank')}
+              >
+                {buttonText}
+              </Button>
+              {button2Text && (
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="text-white bg-transparent border-white hover:bg-white hover:text-black transition-colors"
+                  onClick={() => button2Href && window.open(button2Href, '_blank')}
+                >
+                  {button2Text}
+                </Button>
+              )}
+            </div>
           </motion.div>
         )}
       </div>

@@ -35,6 +35,8 @@ export const sections = [
     showButton: true,
     buttonText: 'Позвонить: 8 987 835-39-92',
     buttonHref: 'tel:+79878353992',
+    button2Text: 'Написать в MAX',
+    button2Href: 'https://max.ru/u/f9LHodD0cOKW9AcVtRlK9hypbaFebhLHGKeWK9zv-R6QrpI7iZ3vQnksYJU',
     bgImage: 'https://cdn.poehali.dev/projects/fbef872b-3c30-462f-8f99-b13ba48ec336/files/2c25a65e-00b6-49d7-b606-e53f62ad25cb.jpg'
   },
 ]
